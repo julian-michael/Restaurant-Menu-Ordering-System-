@@ -20,29 +20,19 @@ A **Django-powered** web application that allows customers to **scan a QR code**
 | **QR Code API** | Enables menu access via QR scanning |
 | **Bootstrap** | Enhances UI responsiveness |
 
-## 📸 Screenshots
-### 📌 Home Page  
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page)  
 
-### 📌 Menu Page  
-![Menu Page](https://via.placeholder.com/800x400?text=Menu+Page)  
-
-### 📌 Order Management  
-![Order Management](https://via.placeholder.com/800x400?text=Order+Management)  
 
 ## 📦 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/restaurant-menu-ordering.git
 cd restaurant-menu-ordering
 
 # Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-# Install dependencies
-pip install -r requirements.txt
+
 
 # Run migrations
 python manage.py migrate
