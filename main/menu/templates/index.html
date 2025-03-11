@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurant Menu</h1>
+    </header>
+
+    <div class="menu-container">
+        <!-- Starters Section -->
+        <h2>Starters</h2>
+        <div class="menu-item">
+            <span>Garlic Bread</span> <span>$5.00</span>
+            <button onclick="addToCart('Garlic Bread', 5.00)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <span>Bruschetta</span> <span>$6.50</span>
+            <button onclick="addToCart('Bruschetta', 6.50)">Add to Cart</button>
+        </div>
+
+        <!-- Main Course Section -->
+        <h2>Main Course</h2>
+        <div class="menu-item">
+            <span>Grilled Chicken</span> <span>$12.00</span>
+            <button onclick="addToCart('Grilled Chicken', 12.00)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <span>Veggie Pizza</span> <span>$10.50</span>
+            <button onclick="addToCart('Veggie Pizza', 10.50)">Add to Cart</button>
+        </div>
+
+        <!-- Desserts Section -->
+        <h2>Desserts</h2>
+        <div class="menu-item">
+            <span>Chocolate Cake</span> <span>$4.00</span>
+            <button onclick="addToCart('Chocolate Cake', 4.00)">Add to Cart</button>
+        </div>
+
+        <!-- Drinks Section -->
+        <h2>Drinks</h2>
+        <div class="menu-item">
+            <span>Fresh Lemonade</span> <span>$3.00</span>
+            <button onclick="addToCart('Fresh Lemonade', 3.00)">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Section -->
+    <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-list"></ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
