@@ -1,80 +1,33 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-header {
-    background-color: #433792;
-    color: white;
-    padding: 15px;
-    font-size: 24px;
-}
-
-/* Menu Section */
-.menu-container {
-    width: 50%;
-    margin: auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-h2 {
-    color: #ff5733;
-    border-bottom: 2px solid #ff5733;
-    display: inline-block;
-    padding-bottom: 5px;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .menu-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    font-size: 18px;
+    animation: fadeIn 0.5s ease-out;
+    transition: transform 0.3s ease;
 }
 
-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-button:hover {
-    background-color: #218838;
+.cart-bounce {
+    animation: bounce 0.5s;
 }
 
-/* Cart Section */
-.cart-container {
-    width: 50%;
-    margin: auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
 }
 
-#cart-list {
-    list-style-type: none;
-    padding: 0;
+.dish-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
 }
 
-#cart-list li {
-    padding: 5px;
-    font-size: 16px;
-}
-
-#total-price {
-    font-weight: bold;
-    font-size: 20px;
+.navbar {
+    background: linear-gradient(45deg, #2c3e50, #3498db);
 }
